@@ -1,0 +1,5 @@
+---
+- name: add docker GPG apt key
+  apt_key:
+          url: "{{ key_url }}"
+          state: present
