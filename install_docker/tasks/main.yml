@@ -1,0 +1,10 @@
+---
+- include_tasks: "install_package.yml"
+- include_tasks: "add_docker_key.yml"
+- include_tasks: "add_docker_repository.yml"
+- include_tasks: "install_docker_ce.yml"
+- include_tasks: "setting_daemon.yml"
+- include_tasks: "install_python.yml"
+- include_tasks: "config_daemon.yml"
+- include_tasks: "pull_docker.yml"
+- include_tasks: "create_container.yml"

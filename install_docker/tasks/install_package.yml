@@ -1,0 +1,13 @@
+---
+- name: installing packages
+  apt:
+          name: "{{ item }}"
+          state: latest
+          update_cache: yes
+  loop:
+          - 'aptitude'
+          - 'apt-transport-https'
+          - 'ca-certificates'
+          - 'curl'
+          - 'software-properties-common'        
+            
