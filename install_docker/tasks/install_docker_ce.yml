@@ -1,6 +1,0 @@
----
-- name: update apt and install docker -ce
-  apt:
-          name: docker-ce
-          update_cache: yes
-          state: latest
